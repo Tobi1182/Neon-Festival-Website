@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./img/Favicons.png" />
+    <title>Festival detail</title>
+    <style>
+      .bgIMG {
+        background-color: rgba(0, 0, 0, 0.432);
+        width: auto;
+        height: auto;
+        padding: 0px 0;
+        text-align: center;
+        background-image: url(./img/coming-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .qwer {
+        background-image: linear-gradient(
+          144deg,
+          #af40ff,
+          #5b42f3 50%,
+          #00ddeb
+        );
+        border: 0;
+        border-radius: 8px;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: inline-flex;
+        font-family: Phantomsans, sans-serif;
+        font-size: 20px;
+        justify-content: center;
+        line-height: 1em;
+        max-width: 100%;
+        min-width: 140px;
+        padding: 3px;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+
+      .qwer:active,
+      .qwer:hover {
+        outline: 0;
+      }
+
+      .qwer span {
+        background-color: rgb(5, 6, 45);
+        padding: 16px 24px;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        transition: 300ms;
+      }
+
+      .qwer:hover span {
+        background: none;
+      }
+
+      @media (min-width: 768px) {
+        .qwer {
+          font-size: 24px;
+          min-width: 196px;
+        }
+      }
+    </style>
+  </head>
+  <body class="bgIMG">
+    <!-- NavBar -->
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: rgba(0, 0, 0, 0.979)"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./img/NeonLogoWeb@4x-768x291.png"
+            alt=""
+            style="width: 109px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="ticket.html">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">AboutUs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: white; background-color: black"
+                >Line up
+              </a>
+              <ul
+                class="dropdown-menu"
+                style="color: white; background-color: black"
+              >
+                <li>
+                  <a class="dropdown-item" href="festivalDetail.html"
+                    >schedule</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">NMF TV</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">ContactUs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="festivalDetail.html">Festival detail</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Create Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log In</a>
+            </li>
+          </ul>
+          <img src="./img/ultra-worldwide.png" alt="" style="width: 99px" />
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar -->
+
+    <!---->
+
+    <img
+      src="./img/neon-logo-coming.png"
+      class="rounded mx-auto d-block"
+      alt="..."
+      style="width: 300px"
+    />
+    <div class="grid text-center" style="--bs-rows: 3; --bs-columns: 3">
+      <div class="g-start-2" style="grid-row: 2">
+        <button
+          class="qwer"
+          role="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+          class="button-8"
+        >
+          <span class="carousel-control-prev-" aria-hidden="true">DAY 1</span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="qwer"
+          role="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next
+      "
+        >
+          <span class="carousel-control-next-" aria-hidden="true">DAY 2</span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container w-75 mt-4">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade border-2"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active m-2 p-5"
+            style="background-color: rgba(156, 156, 156, 0.616)"
+          >
+            <h1 class="text-center"><strong> DAY 1</strong></h1>
+            <h1 class="text-center"><strong>HEADLINDERS</strong></h1>
+            <div
+              style="
+                width: 100%;
+                height: 1px;
+                background: #fff;
+                margin-bottom: 24px;
+                background: -moz-
+                  oldlinear-gradient(
+                    left,
+                    rgba(252, 252, 252, 0) 0%,
+                    rgb(0, 0, 0) 10%,
+                    rgba(250, 250, 250, 0) 100%
+                  );
+                background: -o-linear-gradient(
+                  left,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgb(0, 0, 0) 10%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+                background: linear-gradient(
+                  to right,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgb(0, 0, 0) 10%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+              "
+            ></div>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="./img/Skrillex-Logo-700x394.png "
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./img/marshmello-logo-FE8E51CB79-seeklogo.png"
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 200px"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <h1 class="text-center"><strong>SUPPORT</strong></h1>
+                <div
+                  style="
+                    width: 100%;
+                    height: 1px;
+                    background: #fff;
+                    margin-bottom: 24px;
+                    background: -moz-
+                      oldlinear-gradient(
+                        left,
+                        rgba(252, 252, 252, 0) 0%,
+                        rgb(0, 0, 0) 10%,
+                        rgba(250, 250, 250, 0) 100%
+                      );
+                    background: -o-linear-gradient(
+                      left,
+                      rgba(255, 255, 255, 0) 0%,
+                      rgb(0, 0, 0) 10%,
+                      rgba(255, 255, 255, 0) 100%
+                    );
+                    background: linear-gradient(
+                      to right,
+                      rgba(255, 255, 255, 0) 0%,
+                      rgb(0, 0, 0) 10%,
+                      rgba(255, 255, 255, 0) 100%
+                    );
+                  "
+                ></div>
+                <div class="col">
+                  <img
+                    src="./img/Mike_Williams_Logo.png "
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./img/again--logo.png"
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./img/zomboy-logo-5A1614E3B1-seeklogo.com.png"
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="./img/Marilyn-Manson-Logo-640x400.png"
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./img/Afrojack-Logo-640x400.png"
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item m-2 p-5"
+            style="background-color: rgba(156, 156, 156, 0.616)"
+          >
+            <h1 class="text-center"><strong>DAY 2</strong></h1>
+            <h1 class="text-center"><strong> HEADLINDERS</strong></h1>
+            <div
+              style="
+                width: 100%;
+                height: 1px;
+                background: #fff;
+                margin-bottom: 24px;
+                background: -moz-
+                  oldlinear-gradient(
+                    left,
+                    rgba(252, 252, 252, 0) 0%,
+                    rgb(0, 0, 0) 10%,
+                    rgba(250, 250, 250, 0) 100%
+                  );
+                background: -o-linear-gradient(
+                  left,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgb(0, 0, 0) 10%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+                background: linear-gradient(
+                  to right,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgb(0, 0, 0) 10%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+              "
+            ></div>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="./img/avicii-logo-2205DDAADB-seeklogo.com.png "
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./img/330px-Zedd_Logo.png"
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <h1 class="text-center"><strong>SUPPORT</strong></h1>
+                <div
+                  style="
+                    width: 100%;
+                    height: 1px;
+                    background: #fff;
+                    margin-bottom: 24px;
+                    background: -moz-
+                      oldlinear-gradient(
+                        left,
+                        rgba(252, 252, 252, 0) 0%,
+                        rgb(0, 0, 0) 10%,
+                        rgba(250, 250, 250, 0) 100%
+                      );
+                    background: -o-linear-gradient(
+                      left,
+                      rgba(255, 255, 255, 0) 0%,
+                      rgb(0, 0, 0) 10%,
+                      rgba(255, 255, 255, 0) 100%
+                    );
+                    background: linear-gradient(
+                      to right,
+                      rgba(255, 255, 255, 0) 0%,
+                      rgb(0, 0, 0) 10%,
+                      rgba(255, 255, 255, 0) 100%
+                    );
+                  "
+                ></div>
+                <div class="col">
+                  <img
+                    src="./img/Vini_Vici_Logo.png "
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./img/DVBBS.webp"
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./img/200px-TiC3ABsto_logo.png"
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="./img/nicky-romero-logo.png"
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./img/Martin-Garrix-Logo-700x394.png"
+                    class="img-fluid p-3"
+                    alt="..."
+                    style="width: 250px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1>
+      <span style="color: #7bbd3e !important" class="badge bg-secondary"
+        >Live On Air</span
+      >
+    </h1>
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/4a-WM6ab8Tk?start=10"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col align-self-center">
+          <h1>
+            <span style="color: #b5ef12 !important" class="badge bg-secondary"
+              >SPONSORS</span
+            >
+          </h1>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="./img/heineken-logo-C4F7E290E9-seeklogo.com.png"
+                    class="img-fluid"
+                    alt="..."
+                    style="width: 40%"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./img/pngimg.com_-_cocacola_logo_PNG5.png"
+                    class="img-fluid"
+                    alt="..."
+                    style="width: 40%"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="./img/beats-electronics-logo-png-transparent.png"
+                    class="img-fluid"
+                    alt="..."
+                    style="width: 40%"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./img/kfc-png-logo-4094.png"
+                    class="img-fluid"
+                    alt="..."
+                    style="width: 40%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <!-- footer-->
+    <div style="background-color: #000000c0">
+      <div class="container mt-5">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+              <!--Grid row-->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <img
+                    src="./img/NeonLogoWeb@4x-768x291.png"
+                    alt=""
+                    style="width: 150px"
+                  />
+                  <div
+                    style="
+                      width: 100%;
+                      height: 1px;
+                      background: #fff;
+                      margin-bottom: 24px;
+                      background: -moz-
+                        oldlinear-gradient(
+                          left,
+                          rgba(255, 255, 255, 0) 100%,
+                          rgba(255, 255, 255, 0) 100%,
+                          rgba(255, 255, 255, 0) 100%
+                        );
+                      background: -o-linear-gradient(
+                        left,
+                        rgba(255, 255, 255, 0) 0%,
+                        rgba(255, 255, 255, 0) 0%,
+                        rgba(255, 255, 255, 0) 100%
+                      );
+                      background: linear-gradient(
+                        to right,
+                        rgba(255, 255, 255, 0) 0%,
+                        white 10%,
+                        rgba(255, 255, 255, 0) 100%
+                      );
+                    "
+                  ></div>
+                  <p style="margin-bottom: 20px">
+                    <strong>May 23,24 - 2023</strong>
+                  </p>
+                  <p style="margin-bottom: 5px">Bayfront Park</p>
+                  <p style="margin-bottom: 5px">Downtown Miami, Fl</p>
+                  <div class="countdown-container"></div>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <p>
+                    <a class="text-white none" href="#">Lineup</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Tickets</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Previous Lineups</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Live Sets</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Gallery</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Contact Us</a>
+                  </p>
+                </div>
+
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <p>
+                    <a class="text-white none" href="#">News</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Road to Neon</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Neon Flim</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Neon TV</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Neon Radio</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <p>
+                    <img
+                      src="./img/NeonLogoWeb@4x-768x291.png"
+                      alt=""
+                      style="width: 150px"
+                    />
+                  </p>
+                  <p>
+                    <i
+                      class="fa-brands fa-facebook fa-2xl"
+                      style="color: #005eff"
+                    ></i>
+                    <i
+                      class="fa-brands fa-instagram fa-2xl"
+                      style="color: #fa59bf"
+                    ></i>
+                    <i
+                      class="fa-brands fa-tiktok fa-2xl"
+                      style="color: #ede502"
+                    ></i>
+                    <i
+                      class="fa-brands fa-github fa-2xl"
+                      style="color: #ffffff"
+                    ></i>
+                  </p>
+                  <p>
+                    <i
+                      class="fa-brands fa-google-play fa-2xl"
+                      style="color: #00ff55"
+                    ></i>
+                    <i
+                      class="fa-brands fa-twitter fa-2xl"
+                      style="color: #07bfe4"
+                    ></i>
+                    <i class="fa-brands fa-apple fa-2xl"></i>
+                    <i
+                      class="fa-brands fa-youtube fa-2xl"
+                      style="color: #d60000"
+                    ></i>
+                  </p>
+                </div>
+              </div>
+              <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+            <div
+              style="
+                width: 100%;
+                height: 1px;
+                background: #fff;
+                margin-bottom: 24px;
+                background: -moz-
+                  oldlinear-gradient(
+                    left,
+                    rgba(255, 255, 255, 0) 100%,
+                    rgba(255, 255, 255, 0) 100%,
+                    rgba(255, 255, 255, 0) 100%
+                  );
+                background: -o-linear-gradient(
+                  left,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+                background: linear-gradient(
+                  to right,
+                  rgba(255, 255, 255, 0) 0%,
+                  white 10%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+              "
+            ></div>
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center">© 2023 Neon Music Festival</div>
+          <br />
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </div>
+    </div>
+    <!-- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!--Pale pyin-->

@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  border-bottom: 1px solid white;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+.search {
+  border: 2px solid rgb(255, 255, 255);
+  background: transparent;
+}
+.search::placeholder {
+  color: rgba(255, 255, 255);
+}
+.search:focus::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.searchBtn {
+  color: rgb(255, 255, 255);
+}
+.nav-item a {
+  color: rgb(253, 253, 253);
+  transition: 0.3s ease-in-out;
+}
+.nav-item a:hover {
+  color: rgb(60, 187, 191);
+  font-weight: 400;
+}
+.navbar-brand {
+  background-color: #f1eeee00;
+}
+
+.searchBtn {
+  border-width: 2px;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: white;
+  --bs-btn-border-radius: 0.5rem;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: rgb(255, 255, 255);
+  --bs-btn-hover-border-color: black;
+  --bs-btn-focus-shadow-rgb: rgb(4, 4, 4);
+  --bs-btn-active-color: black;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: black;
+}
+
+.search {
+  border-width: 2px;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: white;
+  --bs-btn-border-radius: 0.5rem;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: rgb(255, 255, 255);
+  --bs-btn-hover-border-color: black;
+  --bs-btn-focus-shadow-rgb: rgb(4, 4, 4);
+  --bs-btn-active-color: black;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: black;
+}
+.dropdown-menu {
+  background-color: black;
+}
+.none {
+  text-decoration: none;
+}

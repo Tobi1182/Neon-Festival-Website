@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./img/Favicons.png" />
+    <title>About us</title>
+    <style>
+      .p {
+        font-family: "fg-reg";
+        margin-bottom: 2em;
+        color: #eee;
+      }
+      .accordion,
+      .accordion-item {
+        background-color: transparent !important;
+        border: none;
+        padding: 0 !important;
+        color: white;
+      }
+      .navbar {
+        border-bottom: 1px solid rgba(181, 178, 178, 0.566);
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(./img/coming-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(5px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: rgba(0, 0, 0, 0.979)"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./img/NeonLogoWeb@4x-768x291.png"
+            alt=""
+            style="width: 109px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="ticket.html">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">AboutUs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: white; background-color: black"
+                >Line up
+              </a>
+              <ul
+                class="dropdown-menu"
+                style="color: white; background-color: black"
+              >
+                <li>
+                  <a class="dropdown-item" href="festivalDetail.html"
+                    >schedule</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">NMF TV</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">ContactUs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="festivalDetail.html">Festival detail</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Create Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log In</a>
+            </li>
+          </ul>
+          <img src="./img/ultra-worldwide.png" alt="" style="width: 99px" />
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar -->
+
+    <!--  Start Ticket -->
+    <img
+      src="./img/neon-logo-coming.png"
+      class="rounded mx-auto d-block"
+      alt="..."
+      style="width: 300px"
+    />
+    <!-- div-->
+    <div
+      class="container text-center"
+      style="background-color: rgba(0, 0, 0, 0.755); padding: 30px"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h1
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                  style="color: #eee; background-color: rgba(0, 0, 0, 0)"
+                >
+                  <strong>About Us</strong>
+                </h1>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body text-start">
+                    <h6 class="text-start">
+                      <strong
+                        >NEON™ IS THE GLOBAL EDITION OF THE WORLD’S PREMIER
+                        ELECTRONIC MUSIC EVENT, ULTRA MUSIC FESTIVAL®.</strong
+                      >
+                    </h6>
+                    <p>
+                      The NEON brand in relation to live events was founded in
+                      1997 in Miami by CEO, Chairman & Executive Producer,
+                      Russell Faibisch, who began by producing electronic music
+                      events which led to the inaugural NEON Music Festival® in
+                      1999 on the sands of Miami Beach.
+                    </p>
+
+                    <p>
+                      The internationally-renowned festival, which has taken
+                      place every March since its inception, celebrated its 21st
+                      anniversary on March 29-31, 2019 by bringing more than
+                      170,000 music enthusiasts to the sold-out waterfront event
+                      in Miami. Ultra Music Festival®, which was voted the
+                      world’s #1 music festival by DJ Mag multiple times, will
+                      make its triumphant return to its long-time home at
+                      Bayfront Park for its 22nd annual edition on March 20-22,
+                      2019.
+                    </p>
+                    <p>
+                      Choosing to follow a unique and creative vision, and a
+                      wholly organic growth focused on its true love for music,
+                      artists and fans alike, the ULTRA and ULTRA Worldwide™
+                      brands represent not only the world’s biggest and most
+                      successful remaining INDEPENDENT electronic music festival
+                      brand, but also the most INTERNATIONAL music festival
+                      brand in the world.
+                    </p>
+                    <p>
+                      Over the past 22 years, thousands of the world’s most
+                      iconic DJs, producers and live acts have mesmerized
+                      audiences with awe-inspiring sets at ULTRA festivals
+                      across all six inhabited continents, producing events in
+                      26 cities and 29 countries, including ARGENTINA,
+                      AUSTRALIA, BRASIL, CHILE, CHINA, COLOMBIA, CROATIA, INDIA,
+                      JAPAN, KOREA, MEXICO, SINGAPORE, SOUTH AFRICA, TAIWAN and
+                      so many more. Each new global edition has been founded on
+                      the same successful recipe that has been perfected over
+                      more than 20 years in Miami, combining the most diverse
+                      electronic talent with the most technologically advanced,
+                      large-scale festival productions in the world.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h1
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="collapseTwo"
+                  style="color: #eee; background-color: rgba(0, 0, 0, 0)"
+                >
+                  <strong> Leave No Trace </strong>
+                </h1>
+
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse text-start"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="container text-center">
+                      <div class="row g-0 text-start">
+                        <div class="col-sm-6 col-md-8">
+                          <h5 class="mt-3 mb-5">
+                            Ultranauts, here’s what U can do to leave no trace!
+                          </h5>
+                          <h6 class="mb-4">Never EVER litter</h6>
+                          <p class="mb-4">
+                            Nothing should ever be left on the ground,
+                            especially drink containers and cigarettes. Wind can
+                            blow these items into the city or the bay. Always
+                            put trash and recyclable materials in their
+                            appropriate receptacles.
+                          </p>
+                          <p class="mb-4">
+                            If you see litter on the ground, please help by
+                            picking it up. It may not be your litter, but it is
+                            your planet!
+                          </p>
+                        </div>
+                        <div class="col-6 col-md-4">
+                          <img
+                            src="./img/miami-no-cigarette-icon.png"
+                            alt=""
+                            style="margin-left: 40%"
+                            class="mt-5"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          width: 100%;
+                          height: 1px;
+                          background: #fff;
+                          margin-bottom: 24px;
+                          background: -moz-
+                            oldlinear-gradient(
+                              left,
+                              rgba(255, 255, 255, 0) 0%,
+                              white 10%,
+                              rgba(255, 255, 255, 0) 100%
+                            );
+                          background: -o-linear-gradient(
+                            left,
+                            rgba(255, 255, 255, 0) 0%,
+                            white 10%,
+                            rgba(255, 255, 255, 0) 100%
+                          );
+                          background: linear-gradient(
+                            to right,
+                            rgba(255, 255, 255, 0) 0%,
+                            white 10%,
+                            rgba(255, 255, 255, 0) 100%
+                          );
+                        "
+                      ></div>
+
+                      <div class="row g-0 text-start">
+                        <div class="col-sm-6 col-md-8">
+                          <h6 class="mb-4">Keep your group’s areas clean</h6>
+                          <p class="mb-4">
+                            If trash and recycling bins are not immediately
+                            nearby, keep your waste together and take it with
+                            you when you leave.
+                          </p>
+                          <p class="mb-4">
+                            Before heading to trash and recycling bins, check
+                            your space for litter, including cigarettes, and
+                            take it with you.
+                          </p>
+                        </div>
+                        <div class="col-6 col-md-4">
+                          <img
+                            src="./img/miami-litter-in-trash-icon.png"
+                            alt=""
+                            style="margin-left: 40%"
+                            class="mb-5"
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        style="
+                          width: 100%;
+                          height: 1px;
+                          background: #fff;
+                          margin-bottom: 24px;
+                          background: -moz-
+                            oldlinear-gradient(
+                              left,
+                              rgba(255, 255, 255, 0) 0%,
+                              white 10%,
+                              rgba(255, 255, 255, 0) 100%
+                            );
+                          background: -o-linear-gradient(
+                            left,
+                            rgba(255, 255, 255, 0) 0%,
+                            white 10%,
+                            rgba(255, 255, 255, 0) 100%
+                          );
+                          background: linear-gradient(
+                            to right,
+                            rgba(255, 255, 255, 0) 0%,
+                            white 10%,
+                            rgba(255, 255, 255, 0) 100%
+                          );
+                        "
+                      ></div>
+
+                      <div class="row g-0 text-start">
+                        <div class="col-sm-6 col-md-8">
+                          <h6 class="mb-4">
+                            Respect all protective barriers and fencing
+                          </h6>
+                          <p class="mb-4">
+                            Barriers and fencing are implemented to keep both
+                            you and the environment safe. Never climb, breach or
+                            move barriers.
+                          </p>
+                        </div>
+                        <div class="col-6 col-md-4">
+                          <img
+                            src="./img/miami-fence-barrier-icon.png"
+                            alt=""
+                            style="margin-left: 33%"
+                            class="mb-5"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        width: 100%;
+                        height: 1px;
+                        background: #fff;
+                        margin-bottom: 24px;
+                        background: -moz-
+                          oldlinear-gradient(
+                            left,
+                            rgba(255, 255, 255, 0) 0%,
+                            white 10%,
+                            rgba(255, 255, 255, 0) 100%
+                          );
+                        background: -o-linear-gradient(
+                          left,
+                          rgba(255, 255, 255, 0) 0%,
+                          white 10%,
+                          rgba(255, 255, 255, 0) 100%
+                        );
+                        background: linear-gradient(
+                          to right,
+                          rgba(255, 255, 255, 0) 0%,
+                          white 10%,
+                          rgba(255, 255, 255, 0) 100%
+                        );
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h1
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree"
+                  style="color: #eee; background-color: rgba(0, 0, 0, 0)"
+                >
+                  Volunteer
+                </h1>
+
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <img
+                    src="./img/CV-logo-2014-wht-01.png"
+                    class="img-fluid"
+                    alt="..."
+                    width="20%"
+                  />
+
+                  <p class="mb-4 text-start">
+                    As part of continuing our Mission: Home program, we welcome
+                    back Clean Vibes to ensure that we keep Bayfront Park and
+                    Biscayne Bay beautiful while diverting as much festival
+                    waste as possible from landfill.
+                  </p>
+                  <p class="mb-4 text-start">
+                    Volunteer with Clean Vibes in exchange for festival
+                    admission – refundable deposit required. Both single-day and
+                    three-day positions are available. Visit the Sign-Up page
+                    for more information.
+                  </p>
+                  <button type="button" class="btn btn-outline-secondary">
+                    Secondary
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer-->
+
+    <div style="background-color: #000000c0">
+      <div class="container mt-5">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+              <!--Grid row-->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <img
+                    src="./img/NeonLogoWeb@4x-768x291.png"
+                    alt=""
+                    style="width: 150px"
+                  />
+                  <div
+                    style="
+                      width: 100%;
+                      height: 1px;
+                      background: #fff;
+                      margin-bottom: 24px;
+                      background: -moz-
+                        oldlinear-gradient(
+                          left,
+                          rgba(255, 255, 255, 0) 100%,
+                          rgba(255, 255, 255, 0) 100%,
+                          rgba(255, 255, 255, 0) 100%
+                        );
+                      background: -o-linear-gradient(
+                        left,
+                        rgba(255, 255, 255, 0) 0%,
+                        rgba(255, 255, 255, 0) 0%,
+                        rgba(255, 255, 255, 0) 100%
+                      );
+                      background: linear-gradient(
+                        to right,
+                        rgba(255, 255, 255, 0) 0%,
+                        white 10%,
+                        rgba(255, 255, 255, 0) 100%
+                      );
+                    "
+                  ></div>
+                  <p style="margin-bottom: 20px">
+                    <strong>May 23,24 - 2023</strong>
+                  </p>
+                  <p style="margin-bottom: 5px">Bayfront Park</p>
+                  <p style="margin-bottom: 5px">Downtown Miami, Fl</p>
+                  <div class="countdown-container"></div>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <p>
+                    <a class="text-white none" href="#">Lineup</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Tickets</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Previous Lineups</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Live Sets</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Gallery</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Contact Us</a>
+                  </p>
+                </div>
+
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <p>
+                    <a class="text-white none" href="#">News</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Road to Neon</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Neon Flim</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Neon TV</a>
+                  </p>
+                  <p>
+                    <a class="text-white none" href="#">Neon Radio</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <p>
+                    <img
+                      src="./img/NeonLogoWeb@4x-768x291.png"
+                      alt=""
+                      style="width: 150px"
+                    />
+                  </p>
+                  <p>
+                    <i
+                      class="fa-brands fa-facebook fa-2xl"
+                      style="color: #005eff"
+                    ></i>
+                    <i
+                      class="fa-brands fa-instagram fa-2xl"
+                      style="color: #fa59bf"
+                    ></i>
+                    <i
+                      class="fa-brands fa-tiktok fa-2xl"
+                      style="color: #ede502"
+                    ></i>
+                    <i
+                      class="fa-brands fa-github fa-2xl"
+                      style="color: #ffffff"
+                    ></i>
+                  </p>
+                  <p>
+                    <i
+                      class="fa-brands fa-google-play fa-2xl"
+                      style="color: #00ff55"
+                    ></i>
+                    <i
+                      class="fa-brands fa-twitter fa-2xl"
+                      style="color: #07bfe4"
+                    ></i>
+                    <i class="fa-brands fa-apple fa-2xl"></i>
+                    <i
+                      class="fa-brands fa-youtube fa-2xl"
+                      style="color: #d60000"
+                    ></i>
+                  </p>
+                </div>
+              </div>
+              <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+            <div
+              style="
+                width: 100%;
+                height: 1px;
+                background: #fff;
+                margin-bottom: 24px;
+                background: -moz-
+                  oldlinear-gradient(
+                    left,
+                    rgba(255, 255, 255, 0) 100%,
+                    rgba(255, 255, 255, 0) 100%,
+                    rgba(255, 255, 255, 0) 100%
+                  );
+                background: -o-linear-gradient(
+                  left,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+                background: linear-gradient(
+                  to right,
+                  rgba(255, 255, 255, 0) 0%,
+                  white 10%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+              "
+            ></div>
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center">© 2023 Neon Music Festival</div>
+          <br />
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </div>
+    </div>
+    <!-- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!--Done-->
